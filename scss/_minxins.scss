@@ -1,0 +1,17 @@
+
+// Take away default look from links
+
+@mixin plain-link {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+
+// Center elements
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
