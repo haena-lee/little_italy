@@ -8,11 +8,12 @@
 @import 'mixins';
 
 // Resets and Defaults
-@import 'reset';
+@import 'resets';
 @import 'typography';
 
 // Site Sections
 @import 'body';
+@import 'header';
 @import 'wrapper';
 @import 'nav';
 @import 'hamburger';

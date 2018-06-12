@@ -9,6 +9,20 @@ $text-color-dark: #454545;
 $red-highlight: #ec6b6b;
 $green-highlight: #5d8462;
 
+// Fonts
+$heading-font: Trebuchet, Sans-serif;
+$body-font: Arial, Helvetica, Sans-serif;
+
+// Font Sizes
+$text-large: 2.5em;
+$text-medium-large: 1.5em;
+$text-medium: 1.2em;
+$text-small: 1em;
+
+// Layout variables
+$padding: 30px;
+
+
 // Media Query Breakpoints
 $desktop: em(1250);
 $tabletLandscape: em(1024);

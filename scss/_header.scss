@@ -1,0 +1,40 @@
+
+// Header Styles
+
+header {
+    background-color: $background-color;
+    padding: $padding;
+
+    .main-header{
+        text-align: center;
+        @include margin-center;
+        padding-bottom: $padding;
+        color: $text-color-logo;
+
+        .title {
+            font-size: $text-large;
+        } /* end of tytle */
+
+
+        .red-line {
+            display: inline-block;
+            width: 80px;
+            border-top: 3px $red-highlight solid;
+        } /* end of red-line */
+
+        .green-line {
+            display: inline-block;
+            width: 80px;
+            border-top: 3px $green-highlight solid;
+        } /* end of green-line */ 
+    
+        h2 {
+            padding-top: $padding/2;
+            padding-bottom: $padding/2;
+            font-size: $text-medium;
+        }
+
+    } /* end of main-header */
+
+} /* end of header */
+

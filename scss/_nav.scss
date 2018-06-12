@@ -1,0 +1,23 @@
+// Nav bar styles
+
+nav {
+    width: 50%;
+    @include margin-center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    @include plain-link;
+    color: $text-color-light;
+    font-size: $text-small;
+    padding: $padding/2;
+}
