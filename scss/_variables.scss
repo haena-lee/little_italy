@@ -3,8 +3,8 @@
 $background-color: #5e5858;
 
 // Text Colors
-$text-color-light: #c8c8c8;
-$text-color-dark: #454545;
+$text-color-light: #c5c5c5;
+$text-color-dark: #525252;
 $red-highlight: #ec6b6b;
 $green-highlight: #6a9b70;
 
@@ -13,14 +13,17 @@ $heading-font: "Raleway", Sans-serif;
 $body-font: "Ubuntu", Helvetica, Sans-serif;
 
 // Font Sizes
-$text-large: 1.2em;
-$text-medium: 1em;
-$text-small: 0.9em;
-$text-xtra-small: 0.8em;
+$text-title: 2.5rem;
+$text-large: 1.8rem;
+$text-medium: 1.2rem;
+$text-small: 1rem;
+$text-xtra-small: 0.9rem;
 
 // Layout variables
 $padding: 30px;
-
+$margin: 50px;
+$line-height-nav: 80px;
+$line-height-text: 22px;
 
 // Media Query Breakpoints
 $desktop: 1250px;

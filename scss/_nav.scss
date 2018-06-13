@@ -4,7 +4,7 @@ nav {
     width: 60%;
     @include margin-center;
     @media screen and (max-width: $tabletLandscape) {
-        width: 70%;
+        width: 80%;
     }
     @media screen and (max-width: $tabletPortrait) {
         width: 80%;
@@ -25,10 +25,17 @@ nav a {
     @include plain-link;
     color: $text-color-light;
     font-size: $text-small;
-    padding: $padding/2;
-    
+    font-weight: 500;
+    padding: $padding/2 0;
+    transition: all 150ms ease-in-out;
+    line-height: $line-height-nav;
+ 
+    #{$link-hover-selector} {
+        border-bottom: 2px solid $red-highlight;
+        color: white;
+    }
+
     @media screen and (max-width: $tabletPortrait) {
         padding: $padding/4;
     }
-
 }

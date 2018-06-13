@@ -9,10 +9,17 @@ footer {
     text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
-    font-size: $text-xtra-small;
+    font-size: $text-small;
     
     .hours, .address, .social-media {
         flex: 1;
         text-align: center;
     }
+
+    .social-media a {
+        @include plain-link;
+        color: $text-color-light;
+        margin: $padding/2;
+    }
+
 }

@@ -1,0 +1,50 @@
+
+// Article Styles
+
+.intro-container {
+    text-align: center;
+    padding: $margin;
+
+    .page-title {
+        font-size: $text-large;
+        padding: $padding;
+        color: $text-color-dark;
+    }
+
+    .page-introduction {
+        font-size: $text-medium*1.02;
+        color: $text-color-dark;
+        padding-top: $padding;
+        line-height: $line-height-text*2;
+    }
+}
+
+.story-container {
+    width: 90%;
+    text-align: center;
+    @include margin-center;
+    display: flex;
+    margin-bottom: $margin;
+    
+    .story-text h3 {
+        font-size: $text-medium;
+        padding: $padding;
+    } // end of story-text h3
+
+    .story-text p {
+        font-size: $text-small;
+        text-align: left;
+        line-height: $line-height-text;
+    }
+
+}
+
+.story-each {
+    flex: 1;
+    padding: $padding;
+}
+
+.story-image {
+    @include margin-center;
+    width: 100%;
+}

@@ -1,47 +1,71 @@
 
 // Header Styles
 
-header {
+/*---------------- general header ------------*/
+
+.main-header{
+    text-align: center;
+    @include margin-center;
+    padding-top: $padding;
+    color: $text-color-light;
+
+
+    a {
+        @include plain-link;
+        color: $text-color-light;
+        font-size: $text-title;
+        font-weight: 500;
+        transition: all 150ms ease-in-out;
+
+         #{$link-hover-selector} {
+            color: white;
+         } 
+
+    } /* end of a */
+
+    .title {
+        font-size: $text-title;
+    }
+
+    .red-line {
+        display: inline-block;
+        width: 80px;
+        border-top: 3px $red-highlight solid;
+    } /* end of red-line */
+
+    .green-line {
+        display: inline-block;
+        width: 80px;
+        border-top: 3px $green-highlight solid;
+    } /* end of green-line */ 
+
+    h2 {
+        padding-top: $padding/2;
+        padding-bottom: $padding/2;
+        font-size: $text-medium;
+        font-weight: 500;
+    }
+
+} /* end of main-header */
+
+
+
+/*---------------- index deader --------------*/
+.home-header {
     min-height: 100vh;
     background-image: url("../images/slideshow01_plating_pasta.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 
-    .main-header{
-        text-align: center;
-        @include margin-center;
-        padding: $padding;
-        color: $text-color-light;
-
-        a {
-            @include plain-link;
-            color: $text-color-light;
-            font-size: $text-medium;
-            font-weight: 500;
-        } /* end of tytle */
+} /* end of home-header */
 
 
-        .red-line {
-            display: inline-block;
-            width: 80px;
-            border-top: 3px $red-highlight solid;
-        } /* end of red-line */
+/*---------------- our story header ------------------*/
+.our-story-header {
+    min-height: 25vh;
+    background-image: url("../images/test-image.png");
+    background-attachment: fixed;
+}
 
-        .green-line {
-            display: inline-block;
-            width: 80px;
-            border-top: 3px $green-highlight solid;
-        } /* end of green-line */ 
-    
-        h2 {
-            padding-top: $padding/2;
-            padding-bottom: $padding/2;
-            font-size: $text-small;
-            font-weight: 500;
-        }
-
-    } /* end of main-header */
-
-} /* end of header */
 
