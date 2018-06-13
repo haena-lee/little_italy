@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700|Ubuntu");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body, footer p {
+  font-family: "Ubuntu", Helvetica, Sans-serif; }
+
+h1, h2, h3, nav a {
+  font-family: "Raleway", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+h1 {
+  font-size: 2em; }
+
+header {
+  min-height: 100vh;
+  background-image: url("../images/slideshow01_plating_pasta.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* end of main-header */ }
+  header .main-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: #c8c8c8;
+    /* end of tytle */
+    /* end of red-line */
+    /* end of green-line */ }
+    header .main-header a {
+      text-decoration: none;
+      color: #c8c8c8;
+      font-size: 1em;
+      font-weight: 500; }
+    header .main-header .red-line {
+      display: inline-block;
+      width: 80px;
+      border-top: 3px #ec6b6b solid; }
+    header .main-header .green-line {
+      display: inline-block;
+      width: 80px;
+      border-top: 3px #6a9b70 solid; }
+    header .main-header h2 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 0.9em;
+      font-weight: 500; }
+
+/* end of header */
+.wrapper {
+  width: 100%; }
+
+nav {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 1024px) {
+    nav {
+      width: 70%; } }
+  @media screen and (max-width: 850px) {
+    nav {
+      width: 80%; } }
+
+nav ul {
+  display: flex;
+  list-style: none; }
+
+nav li {
+  flex: 1;
+  text-align: center; }
+
+nav a {
+  text-decoration: none;
+  color: #c8c8c8;
+  font-size: 0.9em;
+  padding: 15px; }
+  @media screen and (max-width: 850px) {
+    nav a {
+      padding: 7.5px; } }
+
+footer {
+  background-color: #5e5858;
+  display: flex;
+  height: 13vh;
+  color: #c8c8c8;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em; }
+  footer .hours, footer .address, footer .social-media {
+    flex: 1;
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */

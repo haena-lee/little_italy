@@ -1,34 +1,33 @@
 
 // Colors
-$background-color: #454545;
-$text-color-logo: #f3e5dd;
+$background-color: #5e5858;
 
 // Text Colors
 $text-color-light: #c8c8c8;
 $text-color-dark: #454545;
 $red-highlight: #ec6b6b;
-$green-highlight: #5d8462;
+$green-highlight: #6a9b70;
 
 // Fonts
-$heading-font: Trebuchet, Sans-serif;
-$body-font: Arial, Helvetica, Sans-serif;
+$heading-font: "Raleway", Sans-serif;
+$body-font: "Ubuntu", Helvetica, Sans-serif;
 
 // Font Sizes
-$text-large: 2.5em;
-$text-medium-large: 1.5em;
-$text-medium: 1.2em;
-$text-small: 1em;
+$text-large: 1.2em;
+$text-medium: 1em;
+$text-small: 0.9em;
+$text-xtra-small: 0.8em;
 
 // Layout variables
 $padding: 30px;
 
 
 // Media Query Breakpoints
-$desktop: em(1250);
-$tabletLandscape: em(1024);
-$tabletPortrait: em(850);
-$phoneLandscape: em(670);
-$phonePotrait: em(420);
+$desktop: 1250px;
+$tabletLandscape: 1024px;
+$tabletPortrait: 850px;
+$phoneLandscape: 670px; //switch to hamburger menu
+$phonePotrait: 420px;
 
 // Utility Variables
 $link-hover-selector: '&:hover, &:focus, &:active';

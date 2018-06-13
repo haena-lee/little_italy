@@ -1,0 +1,18 @@
+
+// Footer Styles
+
+footer {
+    background-color: $background-color;
+    display: flex;
+    height: 13vh;
+    color: $text-color-light;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $text-xtra-small;
+    
+    .hours, .address, .social-media {
+        flex: 1;
+        text-align: center;
+    }
+}

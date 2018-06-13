@@ -1,12 +1,13 @@
 
 // Typography Styles
 
-body {
+body, footer p {
     font-family: $body-font;
 }
 
 h1, h2, h3, nav a {
     font-family: $heading-font;
     text-transform: uppercase;
-    font-weight: 550;
+    font-weight: 500;
 }
+

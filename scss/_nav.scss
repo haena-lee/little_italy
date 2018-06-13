@@ -1,8 +1,14 @@
 // Nav bar styles
 
 nav {
-    width: 50%;
+    width: 60%;
     @include margin-center;
+    @media screen and (max-width: $tabletLandscape) {
+        width: 70%;
+    }
+    @media screen and (max-width: $tabletPortrait) {
+        width: 80%;
+    }
 }
 
 nav ul {
@@ -20,4 +26,9 @@ nav a {
     color: $text-color-light;
     font-size: $text-small;
     padding: $padding/2;
+    
+    @media screen and (max-width: $tabletPortrait) {
+        padding: $padding/4;
+    }
+
 }
