@@ -1,0 +1,74 @@
+// section styles
+
+.dinner-container {
+    color: $text-color-dark;
+    font-family: $heading-font;
+}
+
+.dinner-intro {
+    text-align: center;
+
+    .first-word {
+        font-size: $text-large;
+        text-transform: uppercase;
+        font-weight: 600;
+    } // end of first-word
+    
+    p {
+        margin: $margin*2 $margin;
+        font-size: $text-medium;
+    } // end of dinner-intro p
+
+    .parent-image {
+        position: relative;
+    }
+
+    .child-text h2 {
+        color: $text-color-light;
+        font-size: $text-medium;
+        font-weight: 600;
+        padding: $padding/2;
+        background-color: rgba(163, 162, 162, 0.2);
+        border: solid 1px $text-color-light;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+} // end of dinner-intro
+
+
+.dinner-menu-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.to-start-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    @include margin-center;
+}
+
+.pasta-container {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    @include margin-center;
+}
+
+.entree-container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    @include margin-center;
+}
+
+.dessert-container {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    @include margin-center;
+}
+
+.flex-div {
+    display: flex;
+}

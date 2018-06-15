@@ -17,6 +17,19 @@
         padding-top: $padding;
         line-height: $line-height-text*2;
     }
+
+    @media screen and (max-width: $tabletPortrait) {
+        .page-introduction {
+            font-size: $text-medium;
+        } 
+    } // end of media screen tabletLandscape
+
+    @media screen and (max-width: $phoneLandscape) {
+        .page-introduction {
+            font-size: $text-small;
+        }
+    } // end of media screen phoneLandscape
+
 }
 
 .story-container {
@@ -34,17 +47,26 @@
     .story-text p {
         font-size: $text-small;
         text-align: left;
-        line-height: $line-height-text;
-    }
+        line-height: $line-height-text*1.5;
+    } // end of story-text p
 
+    @media screen and (max-width: $tabletPortrait) {
+        display: block;
+    } 
+    
 }
 
 .story-each {
     flex: 1;
     padding: $padding;
+
+    @media screen and (max-width: $tabletLandscape) {
+        padding: $padding/2;
+    }
 }
 
 .story-image {
     @include margin-center;
     width: 100%;
 }
+

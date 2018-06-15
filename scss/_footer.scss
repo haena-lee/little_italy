@@ -3,13 +3,13 @@
 
 footer {
     background-color: $background-color;
-    display: flex;
     height: 13vh;
     color: $text-color-light;
     text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
     font-size: $text-small;
+    display: flex;
     
     .hours, .address, .social-media {
         flex: 1;
