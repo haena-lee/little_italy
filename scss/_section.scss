@@ -37,38 +37,52 @@
     }
 } // end of dinner-intro
 
-
 .dinner-menu-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
-.to-start-container {
+
+.to-start-items {
     grid-column: 2/3;
     grid-row: 1/2;
-    @include margin-center;
 }
 
-.pasta-container {
+.to-start-prices {
     grid-column: 3/4;
     grid-row: 1/2;
-    @include margin-center;
 }
 
-.entree-container {
+
+.pasta-items {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.pasta-prices {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.entree-items {
     grid-column: 2/3;
     grid-row: 2/3;
-    @include margin-center;
 }
 
-.dessert-container {
+.entree-prices {
     grid-column: 3/4;
     grid-row: 2/3;
-    @include margin-center;
 }
 
-.flex-div {
-    display: flex;
+.dessert-items {
+    grid-column: 4/5;
+    grid-row: 2/3;
 }
+
+.dessert-prices {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
