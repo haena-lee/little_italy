@@ -15,7 +15,7 @@
         font-size: $text-medium*1.02;
         color: $text-color-dark;
         padding-top: $padding;
-        line-height: $line-height-text*2;
+        line-height: $line-height-text;
     }
 
     @media screen and (max-width: $tabletPortrait) {
@@ -38,6 +38,7 @@
     @include margin-center;
     display: flex;
     margin-bottom: $margin;
+    color: $text-color-dark;
     
     .story-text h3 {
         font-size: $text-medium;
@@ -47,7 +48,7 @@
     .story-text p {
         font-size: $text-small;
         text-align: left;
-        line-height: $line-height-text*1.5;
+        line-height: $line-height-text/1.3;
     } // end of story-text p
 
     @media screen and (max-width: $tabletPortrait) {
