@@ -35,54 +35,74 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
 } // end of dinner-intro
 
 .dinner-menu-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 6fr;
     grid-gap: 20px;
+    line-height: $line-height-text*2;
 }
 
+.to-start-title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
 
 .to-start-items {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .to-start-prices {
     grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.pasta-title {
+    grid-column: 4/5;
     grid-row: 1/2;
 }
 
-
 .pasta-items {
     grid-column: 4/5;
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 
 .pasta-prices {
     grid-column: 5/6;
-    grid-row: 1/2;
+    grid-row: 2/3;
+}
+
+.entree-title {
+    grid-column: 2/3;
+    grid-row: 3/4;
 }
 
 .entree-items {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
 }
 
 .entree-prices {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 4/5;
+}
+
+.dessert-title {
+    grid-column: 4/5;
+    grid-row: 3/4;
 }
 
 .dessert-items {
     grid-column: 4/5;
-    grid-row: 2/3;
+    grid-row: 4/5;
 }
 
 .dessert-prices {
     grid-column: 5/6;
-    grid-row: 2/3;
+    grid-row: 4/5;
 }
 
