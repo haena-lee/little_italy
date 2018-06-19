@@ -46,6 +46,10 @@
             padding: $padding/3;
         }
 
+        @media screen and (max-width: $phonePortrait) {
+            font-size: $text-xtra-small;
+        }
+
 
     } //end of child-text h2
     
@@ -66,92 +70,61 @@
 }
 
 .dinner-menu-container {
+    max-width: 800px;
     display: grid;
-    grid-template-columns: 2fr minmax(max-content, 200px) 20px 1fr minmax(max-content, 200px) 20px 2fr;
-    grid-template-rows: repeat(1fr);
-    grid-gap: 5px;
-    margin: $margin 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 200px;
+    grid-row-gap: 80px;
+    margin: $margin auto $margin-last-child auto;
+    line-height: $line-height-text;
 
+    @media only screen and (max-width: $desktop) {
+        max-width: 60%;
+        grid-column-gap: 100px;
+    }
+
+    @media only screen and (max-width: $tabletLandscape) {
+        max-width: 70%;
+        grid-column-gap: 50px;
+    }
+
+    @media only screen and (max-width: $tabletPortrait) {
+        grid-template-columns: 1fr;
+        margin: $margin auto;
+    }
+
+    .menu-item {
+        display: flex;
+        
+        @media only screen and (max-width: $phonePortrait) {
+            font-size: $text-xtra-small;   
+        }
+    }
+
+    .item {
+        width: 80%;
+
+        @media only screen and (max-width: $phonePortrait) {
+            width: 90%;
+        }
+    }
 
     h3 {
         font-size: $text-medium;
         font-weight: 600;
     } // end of h3
 
-    p {
-        line-height: $line-height-text;
-    }
 
     .line {
+        display: block;
         background-color: $text-color-light;
         width: 40px;
         height: 2px;
-        margin-top: 12px;
+        margin: 10px 0 25px 0;
 }
 
 } // end of dinner-menu-container
 
-.to-start-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.to-start-items {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.to-start-prices {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.pasta-title {
-    grid-column: 5/6;
-    grid-row: 1/2;
-}
-
-.pasta-items {
-    grid-column: 5/6;
-    grid-row: 2/3;
-}
-
-.pasta-prices {
-    grid-column: 6/7;
-    grid-row: 2/3;
-}
-
-.entree-title {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-.entree-items {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    margin-bottom: $margin;
-}
-
-.entree-prices {
-    grid-column: 3/4;
-    grid-row: 5/6;
-}
-
-.dessert-title {
-    grid-column: 5/6;
-    grid-row: 4/5;
-}
-
-.dessert-items {
-    grid-column: 5/6;
-    grid-row: 5/6;
-    margin-bottom: $margin;
-}
-
-.dessert-prices {
-    grid-column: 6/7;
-    grid-row: 5/6;
-}
 
 .fresh-image-zoomed {
     display: none;
@@ -167,24 +140,26 @@
 }
 
 .fresh-sheet-container {
-    width: 40%;
+    max-width: 550px;
     @include margin-center;
     line-height: $line-height-text;
     margin-bottom: $margin-last-child;
 
     @media screen and (max-width: 1500px) {
-        width: 50%;
+        max-width: 55%;
+        padding-left: $padding;
     }
     @media screen and (max-width: $desktop) {
-        width: 60%;
+        max-width: 70%;
     }
     @media screen and (max-width: $tabletLandscape) {
-        width: 80%;
+        max-width: 80%;
     }
     @media screen and (max-width: $tabletPortrait) {
-        width: 85%;
+        max-width: 85%;
+        font-size: $text-xtra-small;
+        padding-left: $padding;
     }
-
 }
 
 .fresh-sheet-title {
@@ -203,7 +178,7 @@
     margin-top: $padding;
 }
 
-.item {
+.fresh-item {
     display: flex;
     @media screen and (max-width: $phoneLandscape) {
         display: block;

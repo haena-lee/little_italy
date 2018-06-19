@@ -14,12 +14,26 @@ footer {
     .hours, .address, .social-media {
         flex: 1;
         text-align: center;
+
+        @media only screen and (max-width: $phoneLandscape) {
+            padding-top: $padding;
+        }
+
     }
 
     .social-media a {
         @include plain-link;
         color: $text-color-light;
         margin: $padding/2;
+    }
+
+    @media only screen and (max-width: $tabletPortrait) {
+        font-size: $text-xtra-small;
+    }
+
+    @media only screen and (max-width: $phoneLandscape) {
+        display: block;
+        min-height: 220px;
     }
 
 }
