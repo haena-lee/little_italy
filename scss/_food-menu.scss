@@ -1,4 +1,4 @@
-// section styles
+// food menu styles
 
 .dinner-container {
     color: $text-color-dark;
@@ -23,53 +23,49 @@
         }
     } // end of dinner-intro p
 
-
-
-    .parent-image {
-        position: relative;
-    } // end of parent-image
-
-    .child-text h2 {
-        color: white;
-        font-size: $text-medium;
-        font-weight: 600;
-        padding: $padding/2;
-        background-color: rgba(163, 162, 162, 0.2);
-        border: solid 1px $text-color-light;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        @media screen and (max-width: $tabletLandscape) {
-            font-size: $text-small;
-            padding: $padding/3;
-        }
-
-        @media screen and (max-width: $phonePortrait) {
-            font-size: $text-xtra-small;
-        }
-
-
-    } //end of child-text h2
-    
-
 } // end of dinner-intro
 
-.dinner-menu-image-zoomed {
+.parent-image {
+    position: relative;
+} // end of parent-image
+
+.child-text h2 {
+    color: white;
+    font-size: $text-medium;
+    font-weight: 600;
+    padding: $padding/2;
+    background-color: rgba(163, 162, 162, 0.2);
+    border: solid 1px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $tabletLandscape) {
+        font-size: $text-small;
+    }
+
+    @media screen and (max-width: $phonePortrait) {
+        font-size: $text-xtra-small;
+        padding: $padding/3;
+    }
+
+} //end of child-text h2
+
+.menu-image-zoomed {
     display: none;
 }
 
 @media only screen and (max-width: $phoneLandscape) {
-    .dinner-menu-image-zoomed {
+    .menu-image-zoomed {
         display: block;
     }
-    .dinner-menu-image {
+    .menu-image {
         display: none;
     }
 }
 
-.dinner-menu-container {
+.menu-container {
     max-width: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -95,6 +91,7 @@
 
     .menu-item {
         display: flex;
+        font-family: $body-font;
         
         @media only screen and (max-width: $phonePortrait) {
             font-size: $text-xtra-small;   
@@ -112,6 +109,7 @@
     h3 {
         font-size: $text-medium;
         font-weight: 600;
+        text-transform: uppercase;
     } // end of h3
 
 
@@ -165,6 +163,7 @@
 .fresh-sheet-title {
     font-size: $text-medium;
     font-weight: 600;
+    text-transform: uppercase;
 
     .line {
         background-color: $text-color-light;
@@ -176,6 +175,7 @@
 
 .fresh-sheet-items {
     margin-top: $padding;
+    font-family: $body-font;
 }
 
 .fresh-item {
