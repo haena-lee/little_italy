@@ -21,6 +21,8 @@ nav li {
     text-align: center;
 }
 
+
+
 nav a {
     @include plain-link;
     color: $text-color-light;
@@ -31,11 +33,15 @@ nav a {
     line-height: $line-height-nav;
  
     #{$link-hover-selector} {
-        border-bottom: 2px solid $red-highlight;
+        border-bottom: 2px solid $green-highlight;
         color: white;
     }
 
     @media screen and (max-width: $tabletPortrait) {
         padding: $padding/4;
     }
+}
+
+nav .current a {
+    color: blue;
 }
