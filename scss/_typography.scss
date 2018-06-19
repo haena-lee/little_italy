@@ -5,9 +5,11 @@ body {
     font-family: $body-font;
 }
 
-h1, h2, h3, nav a {
+h1, h2, h3, h4 nav a {
     font-family: $heading-font;
+}
+
+h1, h2, nav a {
     text-transform: uppercase;
-    font-weight: 550;
 }
 

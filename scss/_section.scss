@@ -18,7 +18,12 @@
     p {
         margin: $margin*2 $margin;
         font-size: $text-medium;
+        @media screen and (max-width: $tabletPortrait) {
+            font-size: $text-small;
+        }
     } // end of dinner-intro p
+
+
 
     .parent-image {
         position: relative;
@@ -35,17 +40,38 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media screen and (max-width: $tabletLandscape) {
+            font-size: $text-small;
+            padding: $padding/3;
+        }
+
+
     } //end of child-text h2
     
 
 } // end of dinner-intro
 
+.dinner-menu-image-zoomed {
+    display: none;
+}
+
+@media only screen and (max-width: $phoneLandscape) {
+    .dinner-menu-image-zoomed {
+        display: block;
+    }
+    .dinner-menu-image {
+        display: none;
+    }
+}
+
 .dinner-menu-container {
     display: grid;
-    grid-template-columns: 3fr 3fr 0.5fr 1fr 3fr 0.5fr 3fr;
-    grid-template-rows: 1fr 5fr 1fr 1fr 5fr;
+    grid-template-columns: 2fr minmax(max-content, 200px) 20px 1fr minmax(max-content, 200px) 20px 2fr;
+    grid-template-rows: repeat(1fr);
     grid-gap: 5px;
     margin: $margin 0;
+
 
     h3 {
         font-size: $text-medium;
@@ -127,23 +153,70 @@
     grid-row: 5/6;
 }
 
+.fresh-image-zoomed {
+    display: none;
+}
+
+@media only screen and (max-width: $phoneLandscape) {
+    .fresh-image-zoomed {
+        display: block;
+    }
+    .fresh-sheet-image {
+        display: none;
+    }
+}
+
 .fresh-sheet-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    width: 40%;
+    @include margin-center;
     line-height: $line-height-text;
+    margin-bottom: $margin-last-child;
+
+    @media screen and (max-width: 1500px) {
+        width: 50%;
+    }
+    @media screen and (max-width: $desktop) {
+        width: 60%;
+    }
+    @media screen and (max-width: $tabletLandscape) {
+        width: 80%;
+    }
+    @media screen and (max-width: $tabletPortrait) {
+        width: 85%;
+    }
+
 }
 
 .fresh-sheet-title {
-    grid-column: 2/4;
-    grid-row: 1/2;
-    text-align: center;
     font-size: $text-medium;
     font-weight: 600;
+
+    .line {
+        background-color: $text-color-light;
+        width: 40px;
+        height: 2px;
+        margin: 12px 0;
+    }
 }
 
 .fresh-sheet-items {
-    grid-column: 2/4;
-    grid-row: 2/3;
-    text-align: center;
+    margin-top: $padding;
+}
+
+.item {
+    display: flex;
+    @media screen and (max-width: $phoneLandscape) {
+        display: block;
+        padding-bottom: $padding;
+    }
+
+    h4 {
+        flex: 2;
+        font-weight: 600;
+    }
+
+    p {
+        flex: 3;
+    }
+    
 }
