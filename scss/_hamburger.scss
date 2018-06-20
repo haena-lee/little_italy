@@ -1,0 +1,54 @@
+
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 28px;
+    z-index: 999;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+
+    @media only screen and (max-width: $phoneLandscape) {
+        display: block;
+    }
+
+    .bar {
+        display: block;
+        position: absolute;
+        left: 0;
+        border-top: 3px solid $text-color-light;
+        width: 100%;
+        transition: 300ms;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    }
+
+    .bar-top {
+        top: 0;
+    }
+
+    .bar-middle {
+        top: 10px;
+    }
+
+    .bar-bottom {
+        top: 20px;
+    }
+}
+
+    .show .bar-top {
+        top: 10px;
+        transform: rotate(45deg);
+    }
+
+    .show .bar-middle {
+        opacity: 0;
+    }
+
+    .show .bar-bottom {
+        top: 10px;
+        transform: rotate(135deg);
+    }
