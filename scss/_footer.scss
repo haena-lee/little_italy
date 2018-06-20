@@ -25,6 +25,11 @@ footer {
         @include plain-link;
         color: $text-color-light;
         margin: $padding/2;
+
+        #{$link-hover-selector} {
+            color: white;
+        }
+
     }
 
     @media only screen and (max-width: $tabletPortrait) {

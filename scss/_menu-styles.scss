@@ -32,7 +32,7 @@
     margin: $margin*2 auto $margin-last-child;
     
     @media only screen and (max-width: $desktop) {
-        max-width: 60%;
+        max-width: 50%;
     }
 
     @media only screen and (max-width: $phoneLandscape) {
@@ -57,11 +57,10 @@
             font-weight: 600;
             padding: $padding/3;
             min-width: 100px;
-            border: 1px solid $text-color-dark;
         }
 
         @media only screen and (max-width: $phoneLandscape) {
-            width: 120px;
+            width: 140px;
             margin: $padding auto;
         }
         
@@ -80,7 +79,7 @@
 .child-text h2 {
     color: white;
     font-size: $text-medium;
-    font-weight: 600;
+    font-weight: 500;
     padding: $padding/2;
     background-color: rgba(163, 162, 162, 0.2);
     border: solid 1px white;
@@ -128,18 +127,24 @@
     }
 
     @media only screen and (max-width: $tabletLandscape) {
-        max-width: 70%;
-        grid-column-gap: 50px;
+        max-width: 75%;
+        grid-column-gap: 80px;
     }
 
     @media only screen and (max-width: $tabletPortrait) {
         grid-template-columns: 1fr;
-        margin: $margin auto;
+        max-width: 50%;
+        margin: $margin auto $margin-last-child auto;
+    }
+
+    @media only screen and (max-width: $phonePortrait) {
+        max-width: 70%;
     }
 
     .menu-item {
         display: flex;
         font-family: $body-font;
+        justify-content: space-between;
         
         @media only screen and (max-width: $phonePortrait) {
             font-size: $text-xtra-small;   
@@ -148,7 +153,6 @@
 
     .item {
         width: 60%;
-        flex: 5;
         
         @media only screen and (max-width: $tabletPortrait) {
             flex: 1;
@@ -157,13 +161,7 @@
         @media only screen and (max-width: $phoneLandscape) {
             flex: 2;
         }
-
     }
-
-    .price {
-        flex: 1;
-    }
-
 
     h3 {
         font-size: $text-medium;
