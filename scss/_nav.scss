@@ -14,6 +14,10 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+
+    .current a {
+        color: white;
+    }
 }
 
 nav li {

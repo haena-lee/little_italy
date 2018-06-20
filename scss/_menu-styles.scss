@@ -1,0 +1,182 @@
+// General Food and drink menu styles
+
+
+.menu-intro {
+    font-family: $heading-font;
+    color: $text-color-dark;
+    text-align: center;
+    line-height: $line-height-text;
+
+    .first-word {
+        font-size: $text-large;
+        text-transform: uppercase;
+        font-weight: 600;
+    } // end of first-word
+    
+    p {
+        margin: $margin*2 $margin;
+        font-size: $text-medium;
+        @media screen and (max-width: $tabletPortrait) {
+            font-size: $text-small;
+        }
+    } // end of menu-intro p
+
+} // end of menu-intro
+
+
+.menu-button-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 600px;
+    margin: $margin*2 auto $margin-last-child;
+    
+    @media only screen and (max-width: $desktop) {
+        max-width: 60%;
+    }
+
+    @media only screen and (max-width: $phoneLandscape) {
+        display: block;
+    }
+
+    h3 a {
+        font-size: $text-small;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        display: block;
+        min-width: 120px;
+        @include plain-link;
+        color: $text-color-dark;
+        padding: $padding/2;
+        border: 2px solid $text-color-dark;
+        transition: all 300ms ease;
+
+        @media only screen and (max-width: $tabletPortrait) {
+            font-size: $text-xtra-small;
+            font-weight: 600;
+            padding: $padding/3;
+            min-width: 100px;
+            border: 1px solid $text-color-dark;
+        }
+
+        @media only screen and (max-width: $phoneLandscape) {
+            width: 120px;
+            margin: $padding auto;
+        }
+        
+        #{$link-hover-selector} {
+            color: white;
+            font-weight: 600;
+            background-color: $text-color-dark;
+        } // end of link-hover-selector
+    } // end of h3 a
+} // end of menu-button-container
+
+.parent-image {
+    position: relative;
+} // end of parent-image
+
+.child-text h2 {
+    color: white;
+    font-size: $text-medium;
+    font-weight: 600;
+    padding: $padding/2;
+    background-color: rgba(163, 162, 162, 0.2);
+    border: solid 1px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $tabletLandscape) {
+        font-size: $text-small;
+    }
+
+    @media screen and (max-width: $phonePortrait) {
+        font-size: $text-xtra-small;
+        padding: $padding/3;
+    }
+
+} //end of child-text h2
+
+.menu-image-zoomed {
+    display: none;
+}
+
+@media only screen and (max-width: $phoneLandscape) {
+    .menu-image-zoomed {
+        display: block;
+    }
+    .menu-image {
+        display: none;
+    }
+}
+
+.menu-container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 200px;
+    grid-row-gap: 80px;
+    margin: $margin auto $margin-last-child auto;
+    line-height: $line-height-text;
+
+    @media only screen and (max-width: $desktop) {
+        max-width: 60%;
+        grid-column-gap: 100px;
+    }
+
+    @media only screen and (max-width: $tabletLandscape) {
+        max-width: 70%;
+        grid-column-gap: 50px;
+    }
+
+    @media only screen and (max-width: $tabletPortrait) {
+        grid-template-columns: 1fr;
+        margin: $margin auto;
+    }
+
+    .menu-item {
+        display: flex;
+        font-family: $body-font;
+        
+        @media only screen and (max-width: $phonePortrait) {
+            font-size: $text-xtra-small;   
+        }
+    } // end of menu-item
+
+    .item {
+        width: 60%;
+        flex: 5;
+        
+        @media only screen and (max-width: $tabletPortrait) {
+            flex: 1;
+        }
+
+        @media only screen and (max-width: $phoneLandscape) {
+            flex: 2;
+        }
+
+    }
+
+    .price {
+        flex: 1;
+    }
+
+
+    h3 {
+        font-size: $text-medium;
+        font-weight: 600;
+        text-transform: uppercase;
+    } // end of h3
+
+
+    .line {
+        display: block;
+        background-color: $text-color-light;
+        width: 40px;
+        height: 2px;
+        margin: 10px 0 25px 0;
+    }
+}

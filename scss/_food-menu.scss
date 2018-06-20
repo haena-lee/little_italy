@@ -1,0 +1,73 @@
+// food menu styles
+
+.dinner-container {
+    color: $text-color-dark;
+}
+
+@media only screen and (max-width: $phoneLandscape) {
+    .fresh-image-zoomed {
+        display: block;
+    }
+    .fresh-sheet-image {
+        display: none;
+    }
+}
+
+.fresh-sheet-container {
+    max-width: 550px;
+    @include margin-center;
+    line-height: $line-height-text;
+    margin-bottom: $margin-last-child;
+
+    @media screen and (max-width: 1500px) {
+        max-width: 55%;
+        padding-left: $padding;
+    }
+    @media screen and (max-width: $desktop) {
+        max-width: 70%;
+    }
+    @media screen and (max-width: $tabletLandscape) {
+        max-width: 80%;
+    }
+    @media screen and (max-width: $tabletPortrait) {
+        max-width: 85%;
+        font-size: $text-xtra-small;
+        padding-left: $padding;
+    }
+}
+
+.fresh-sheet-title {
+    font-size: $text-medium;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .line {
+        background-color: $text-color-light;
+        width: 40px;
+        height: 2px;
+        margin: 12px 0;
+    }
+}
+
+.fresh-sheet-items {
+    margin-top: $padding;
+    font-family: $body-font;
+}
+
+.fresh-item {
+    display: flex;
+    @media screen and (max-width: $phoneLandscape) {
+        display: block;
+        padding-bottom: $padding;
+    }
+
+    h4 {
+        flex: 2;
+        font-weight: 600;
+    }
+
+    p {
+        flex: 3;
+    }
+    
+}

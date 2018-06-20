@@ -15,7 +15,7 @@
         font-size: $text-medium*1.02;
         color: $text-color-dark;
         padding-top: $padding;
-        line-height: $line-height-text*2;
+        line-height: $line-height-text;
     }
 
     @media screen and (max-width: $tabletPortrait) {
@@ -25,6 +25,11 @@
     } // end of media screen tabletLandscape
 
     @media screen and (max-width: $phoneLandscape) {
+        .page-title {
+            font-size: $text-medium;
+            font-weight: 600;
+        }
+        
         .page-introduction {
             font-size: $text-small;
         }
@@ -38,16 +43,25 @@
     @include margin-center;
     display: flex;
     margin-bottom: $margin;
+    color: $text-color-dark;
     
-    .story-text h3 {
+    .story-text h4 {
+        font-family: $heading-font;
+        font-weight: 600;
         font-size: $text-medium;
         padding: $padding;
-    } // end of story-text h3
+        text-transform: uppercase;
+    } // end of story-text h4
 
     .story-text p {
         font-size: $text-small;
         text-align: left;
-        line-height: $line-height-text*1.5;
+        line-height: $line-height-text/1.3;
+
+        @media screen and (max-width: $tabletPortrait) {
+            margin-bottom: $margin;
+        }
+
     } // end of story-text p
 
     @media screen and (max-width: $tabletPortrait) {
