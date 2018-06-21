@@ -41,6 +41,14 @@ function showNav(mq) {
 } // Define a callback function for the event listener.
 
 
+//smooth scroll
+
+$("a[href^='#']").click(function() {
+    const position = $($(this).attr('href')).offset().top;
+    $('body, html').animate({
+        scrollTop: position
+    }, 400 );
+});
 
 
 
