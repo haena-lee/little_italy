@@ -4,22 +4,26 @@
     min-height: 100vh;
     background-image: url("../images/event-space.jpg");
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
+    margin-bottom: 400px;
+    padding-bottom: $margin;
 
     .event-intro {
-        color: $text-color-light;
+        color: white;
         text-align: center;
         line-height: $line-height-text;
-        margin-top: $margin;
+        margin-top: $margin*2;
 
         h3 {
             text-transform: uppercase;
-            font-size: $text-medium;
+            font-size: $text-large;
             font-weight: 600;
         }
 
         p {
-            
+            padding: $padding;
+            font-size: $text-medium;
+            font-weight: 500;
         }
 
         .event-button {
@@ -41,8 +45,10 @@
             background-color: white;
             color: $text-color-dark;
         }
-
     } // end of event-intro
 
+    .event-details {
+        color: white;
+    }
 
 } // end of event-container

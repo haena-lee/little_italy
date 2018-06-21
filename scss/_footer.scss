@@ -3,14 +3,83 @@
 
 footer {
     background-color: $background-color;
-    height: 13vh;
+    // height: 13vh;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     color: $text-color-light;
     text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
     font-size: $text-small;
-    display: flex;
-    
+
+    .newsletter-container {
+        width: 100%;
+        position: absolute;
+        bottom: 170px;
+        text-align: center;
+
+        label {
+            text-transform: lowercase;
+            padding-right: $padding;
+            color: white;
+        } // end of label
+
+        p {
+            padding-bottom: $padding;
+            color: white;
+
+        }
+
+        @media only screen and (max-width: $phoneLandscape) {
+            bottom: 280px;
+        }
+
+    } // end of newsletter-container
+
+    .user-input {
+        border: none;
+        background-color: rgba(white, 0.2);
+        outline: none;
+        width: 200px;
+        height: 23px;
+        margin: 5px;
+        color: white;
+    }
+
+    .submit-button {
+        background-color: transparent;
+        border: 2px solid white;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        font-size: $text-small;
+        font-weight: 600;
+        color: white;
+        padding: $padding/3;
+        margin-top: $padding;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: white;
+        color: $background-color;
+    }
+
+    .footer-container {
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        display: flex;
+
+        @media only screen and (max-width: $phoneLandscape) {
+            display: block;
+            height: 200px;
+        } // end of media query
+    }
+
     .hours, .address, .social-media {
         flex: 1;
         text-align: center;
@@ -18,8 +87,8 @@ footer {
         @media only screen and (max-width: $phoneLandscape) {
             padding-top: $padding;
         }
-
     }
+
 
     .social-media a {
         @include plain-link;
@@ -35,10 +104,10 @@ footer {
     @media only screen and (max-width: $tabletPortrait) {
         font-size: $text-xtra-small;
     }
-
     @media only screen and (max-width: $phoneLandscape) {
-        display: block;
-        min-height: 220px;
+        height: 500px;
     }
+
+
 
 }

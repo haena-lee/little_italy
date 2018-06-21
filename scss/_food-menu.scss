@@ -1,9 +1,5 @@
 // food menu styles
 
-.dinner-container {
-    color: $text-color-dark;
-}
-
 @media only screen and (max-width: $phoneLandscape) {
     .fresh-image-zoomed {
         display: block;
@@ -18,6 +14,9 @@
     @include margin-center;
     line-height: $line-height-text;
     margin-bottom: $margin-last-child;
+    color: $text-color-dark;
+    ;
+
 
     @media screen and (max-width: 1500px) {
         max-width: 55%;

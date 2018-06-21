@@ -9,7 +9,6 @@
     padding-top: $padding;
     color: $text-color-light;
 
-
     a {
         @include plain-link;
         color: $text-color-light;
@@ -21,10 +20,14 @@
             color: white;
          } 
 
+        @media only screen and (max-width: $phoneLandscape) {
+            font-size: $text-large;
+        }
     } /* end of a */
 
     .title {
         font-size: $text-title;
+
     }
 
     .red-line {
@@ -44,6 +47,17 @@
         padding-bottom: $padding/2;
         font-size: $text-medium;
         font-weight: 500;
+
+        @media only screen and (max-width: $phoneLandscape) {
+            font-size: $text-small;
+        }
+
+    }
+
+    .red-line, .green-line {
+        @media only screen and (max-width: $phoneLandscape) {
+            width: 30px;
+        }
     }
 
 } /* end of main-header */
@@ -57,6 +71,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    margin-bottom: 400px;
+    
+    @media only screen and (max-width: $phoneLandscape) {
+        margin-bottom: 500px;
+    }
 } /* end of home-header */
 
 

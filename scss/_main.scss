@@ -3,6 +3,14 @@
 
 main {
     min-height: 100vh;
+    margin-bottom: 400px;
     background-color: white;
+    color: $text-color-dark;
+    padding-bottom: $margin;
+    padding-top: $padding;
+
+    @media only screen and (max-width: $phoneLandscape) {
+        margin-bottom: 500px;
+    }
 }
 
