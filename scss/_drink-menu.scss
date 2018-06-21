@@ -2,13 +2,4 @@
 
 .drinks-container {
     color: $text-color-dark;
-
-    .parent-image, .child-text {
-        transition: all 0.6s ease;
-    }
-
-    .parent-image:hover, .child-text {
-        transform: scale(1.05, 1.05);
-    }
-
 }

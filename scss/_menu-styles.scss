@@ -1,4 +1,13 @@
 // General Food and drink menu styles
+.parent-image {
+    img {
+        transition: all 0.6s ease-in-out;
+    }
+    img:hover {
+        transform: scale(1.05, 1.05);
+    }
+}
+
 
 
 .menu-intro {

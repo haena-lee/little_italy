@@ -1,9 +1,48 @@
 // event page styles
 
-.background-image {
+.event-container {
     min-height: 100vh;
     background-image: url("../images/event-space.jpg");
     background-size: cover;
     background-position: fixed;
-}
 
+    .event-intro {
+        color: $text-color-light;
+        text-align: center;
+        line-height: $line-height-text;
+        margin-top: $margin;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: $text-medium;
+            font-weight: 600;
+        }
+
+        p {
+            
+        }
+
+        .event-button {
+            margin-top: $margin;
+        }
+
+        .event-button a {
+            @include plain-link;
+            font-family: $heading-font;
+            font-size: $text-medium;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+            padding: $padding;
+            border: 2px white solid;
+        }
+
+        .event-button a:hover {
+            background-color: white;
+            color: $text-color-dark;
+        }
+
+    } // end of event-intro
+
+
+} // end of event-container
