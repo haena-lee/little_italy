@@ -1,7 +1,7 @@
 
 // Main Styles
 
-main {
+.scroll-main {
     min-height: 100vh;
     margin-bottom: 400px;
     background-color: white;
@@ -11,6 +11,14 @@ main {
 
     @media only screen and (max-width: $phoneLandscape) {
         margin-bottom: 500px;
-    }
+    } 
+}
+
+.main {
+    min-height: 100vh;
+    background-color: white;
+    color: $text-color-dark;
+    padding-bottom: $margin;
+
 }
 

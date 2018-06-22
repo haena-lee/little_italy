@@ -71,11 +71,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin-bottom: 400px;
-    
-    @media only screen and (max-width: $phoneLandscape) {
-        margin-bottom: 500px;
-    }
+
 } /* end of home-header */
 
 

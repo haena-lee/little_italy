@@ -1,7 +1,45 @@
 
 // Footer Styles
 
-footer {
+.normal-footer{
+    background-color: $background-color;
+    display: flex;
+    height: 13vh;
+    color: $text-color-light;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $text-small;
+    @media only screen and (max-width: $tabletPortrait) {
+        font-size: $text-xtra-small;
+    }
+        
+    @media only screen and (max-width: $phoneLandscape) {
+        display: block;
+        min-height: 220px;
+        }
+
+    .hours, .address, .social-media {
+        flex: 1;
+        text-align: center;
+        
+        @media only screen and (max-width: $phoneLandscape) {
+        padding-top: $padding;
+        }
+    }
+    
+    .social-media a {
+        @include plain-link;
+        color: $text-color-light;
+        margin: $padding/2;
+
+        #{$link-hover-selector} {
+            color: white;
+        }
+    }
+}
+
+.reveal-footer {
     background-color: $background-color;
     // height: 13vh;
     width: 100%;
