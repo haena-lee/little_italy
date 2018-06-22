@@ -5,12 +5,14 @@
     background-image: url("../images/event-space.jpg");
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: $margin-last-child;
 
     .event-intro {
+        margin: $margin-last-child auto;
+        width: 50%;
         color: white;
         text-align: center;
         line-height: $line-height-text;
-        margin-top: $margin*2;
 
         h3 {
             text-transform: uppercase;
@@ -25,7 +27,7 @@
         }
 
         .event-button {
-            margin-top: $margin;
+            margin: $margin;
         }
 
         .event-button a {
@@ -46,7 +48,26 @@
     } // end of event-intro
 
     .event-details {
-        color: white;
+        @include margin-center;
+        width: 100%;
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .event-box {
+            background-color: whitesmoke;
+            @include margin-center;
+            padding: $padding;
+            height: 500px;
+        }
+
+        .event-box:nth-of-type(2) {
+            background-color:rgb(233, 233, 233);
+        }
+
     }
+
 
 } // end of event-container
