@@ -5,7 +5,6 @@
     background-image: url("../images/event-space.jpg");
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: $margin-last-child;
 
     .event-intro {
         margin: $margin-last-child auto;
@@ -51,20 +50,64 @@
         @include margin-center;
         width: 100%;
 
+        .event-space {
+            position: relative;
+        }
+
+        .space-01 {
+            background-image: url("../images/event-image-05.jpg");
+            background-attachment: fixed;
+            background-size: 100%;
+            min-height: 800px;
+        }
+
+        .space-02 {
+            background-image: url("../images/event-image-04.jpg");
+            background-attachment: fixed;
+            background-size: 100%;
+            min-height: 800px;
+        }
+
+        .space-03 {
+            background-image: url("../images/event-image-02.jpg");
+            background-attachment: fixed;
+            background-size: 100%;
+            min-height: 800px;
+        }
+
+        .event-text {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+
+        .line {
+            display: block;
+            background-color: white;
+            width: 40px;
+            height: 2px;
+            margin-top: $padding/2;
+            margin-bottom: $padding;
+        }
+
+        .bullet-points {
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            padding-right: $padding;
+            padding-bottom: $padding;
+        }
+
         h3 {
             text-transform: uppercase;
             font-weight: 600;
+            font-family: $heading-font;
+            font-size: $text-medium;
+            color: white;
         }
 
-        .event-box {
-            background-color: whitesmoke;
-            @include margin-center;
-            padding: $padding;
-            height: 500px;
-        }
-
-        .event-box:nth-of-type(2) {
-            background-color:rgb(233, 233, 233);
+        p {
+            line-height: $line-height-text;
+            color: white;
         }
 
     }
