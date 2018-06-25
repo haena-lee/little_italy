@@ -7,17 +7,15 @@
         background-size: cover;
         background-attachment: fixed;
         min-height: 100vh;
-        position: relative;
     }
 
     .event-intro {
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
+        margin: $margin auto 0 auto;
+        width: 90%;
         color: white;
         text-align: center;
         line-height: $line-height-text;
+        padding-bottom: $margin-last-child;
 
         h3 {
             text-transform: uppercase;
@@ -42,8 +40,7 @@
         }
 
         .event-button {
-            margin: $margin;
-
+            margin-top: $margin;
             @media only screen and (max-width: $phoneLandscape) {
                 margin: 0;
             }
@@ -108,7 +105,7 @@
 
         .event-text {
             position: absolute;
-            top: 40%;
+            top: 30%;
             left: 10%;
         }
 

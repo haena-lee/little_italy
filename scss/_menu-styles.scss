@@ -142,7 +142,7 @@
     @media only screen and (max-width: $tabletPortrait) {
         grid-template-columns: 1fr;
         max-width: 50%;
-        margin: $margin auto $margin-last-child auto;
+        margin: $margin auto $margin auto;
     }
 
     @media only screen and (max-width: $phonePortrait) {
@@ -184,5 +184,11 @@
         width: 40px;
         height: 2px;
         margin: 10px 0 25px 0;
+    }
+
+    .menu-section {
+        @media only screen and (max-width: $tabletPortrait) {
+            margin-bottom: $margin;
+        }
     }
 }
