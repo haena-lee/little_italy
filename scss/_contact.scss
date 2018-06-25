@@ -1,0 +1,79 @@
+// contact styles
+
+
+.contact-container {
+    @include margin-center;
+    width: 80%;
+    max-width: 1100px;
+
+    .reserve-button {
+        text-align: center;
+        margin: $margin*2 auto;
+    }
+
+    .reserve-button a {
+        text-transform: uppercase;
+        font-size: $text-medium;
+        font-weight: 700;
+        @include plain-link;
+        color: $text-color-dark;
+        padding: $padding;
+        border: 2px solid $text-color-dark;
+        #{$link-hover-selector} {
+            color: white;
+            background-color: $text-color-dark;
+        }
+    } // end of reserve-button a
+
+    .map {
+        border: 1px solid $text-color-dark;
+        width: 100%;
+        height: 500px;
+        margin: $margin 0;
+    } // end of map
+
+    .contact-info-container {
+        width: 60%;
+        margin: $margin auto;
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: $line-height-text;
+        }
+
+        a {
+            @include plain-link;
+            color: $text-color-dark;
+            #{$link-hover-selector} {
+                color: $red-highlight;
+            }
+        } // end of a
+
+        .line {
+            display: block;
+            background-color: $text-color-light;
+            width: 40px;
+            height: 2px;
+            margin: 10px 0 25px 0;
+        } // end of line
+    } // end of contact-info-container
+
+    .feedback-text {
+        margin: $margin*2 0;
+        line-height: $line-height-text;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: $text-medium;
+            font-weight: 600;
+            padding-bottom: $padding/2;
+        }
+    } // end of feedback-text
+
+}
