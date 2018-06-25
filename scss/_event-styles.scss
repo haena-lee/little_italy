@@ -1,14 +1,20 @@
 // event page styles
 
 .event-container {
-    min-height: 100vh;
-    background-image: url("../images/event-space.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+
+    .image-container {
+        background-image: url("../images/event-space.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        position: relative;
+    }
 
     .event-intro {
-        margin: $margin-last-child auto;
-        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
         color: white;
         text-align: center;
         line-height: $line-height-text;
@@ -17,16 +23,31 @@
             text-transform: uppercase;
             font-size: $text-large;
             font-weight: 600;
-        }
+
+            @media only screen and (max-width: $phoneLandscape) {
+                font-size: $text-medium;
+            }
+
+        } // end of event-intro h3
 
         p {
             padding: $padding;
             font-size: $text-medium;
             font-weight: 500;
+
+            @media only screen and (max-width: $phoneLandscape) {
+                font-size: $text-small;
+                padding: $padding 0;
+            }
         }
 
         .event-button {
             margin: $margin;
+
+            @media only screen and (max-width: $phoneLandscape) {
+                margin: 0;
+            }
+
         }
 
         .event-button a {
@@ -38,12 +59,21 @@
             color: white;
             padding: $padding;
             border: 2px white solid;
+
+            @media only screen and (max-width: $phoneLandscape) {
+                font-size: $text-small;
+                padding: $padding/3;
+                font-weight: 600;
+            }
+
         }
 
         .event-button a:hover {
             background-color: white;
             color: $text-color-dark;
         }
+
+
     } // end of event-intro
 
     .event-details {
@@ -57,22 +87,23 @@
         .space-01 {
             background-image: url("../images/event-image-05.jpg");
             background-attachment: fixed;
-            background-size: 100%;
-            min-height: 800px;
+            background-size: cover;
+            // background-size: 100%;
+            min-height: 100vh;
         }
 
         .space-02 {
             background-image: url("../images/event-image-04.jpg");
             background-attachment: fixed;
-            background-size: 100%;
-            min-height: 800px;
+            background-size: cover;
+            min-height: 100vh;
         }
 
         .space-03 {
             background-image: url("../images/event-image-02.jpg");
             background-attachment: fixed;
-            background-size: 100%;
-            min-height: 800px;
+            background-size: cover;
+            min-height: 100vh;
         }
 
         .event-text {
@@ -83,7 +114,7 @@
 
         .line {
             display: block;
-            background-color: white;
+            background-color: $text-color-light;
             width: 40px;
             height: 2px;
             margin-top: $padding/2;
@@ -91,8 +122,8 @@
         }
 
         .bullet-points {
-            border-right: 1px solid white;
-            border-bottom: 1px solid white;
+            border-right: 1px solid $text-color-light;
+            border-bottom: 1px solid $text-color-light;
             padding-right: $padding;
             padding-bottom: $padding;
         }
@@ -103,11 +134,17 @@
             font-family: $heading-font;
             font-size: $text-medium;
             color: white;
+
         }
 
         p {
             line-height: $line-height-text;
             color: white;
+
+            
+            @media only screen and (max-width: $phoneLandscape) {
+                font-size: $text-xtra-small;
+            }
         }
 
     }
