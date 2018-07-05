@@ -40,7 +40,7 @@
 }}(jQuery));
 
 $('.fullBackground').fullClip({
-  images: ['../images/slideshow02.jpg', '../images/slideshow01.jpg', '../images/slideshow03.jpg', '../images/slideshow04.jpg', '../images/slideshow05.jpg'],
+  images: ['../images/slideshow02.jpg', '../images/slideshow01.jpg', '../images/slideshow03.jpg', '../images/slideshow09.jpg', '../images/slideshow05.jpg', '../images/slideshow06.jpg'],
   transitionTime: 1000,
   wait: 4000
 });
