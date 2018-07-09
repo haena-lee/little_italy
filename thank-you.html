@@ -11,7 +11,6 @@
 
 <body>
     <wrapper>
-
         <button class="hamburger" tabindex="0">
             <span class="text sr-only">Menu</span>
             <span class="bar bar-top"></span>
@@ -62,70 +61,15 @@
                         <p><a href="mailto:events@littleitaly.ca">events@littleitaly.ca</a></p>
                     </div> <!-- end of contact-us -->
                 </div> <!-- end of contact-info-container -->
-
-                <div class="feedback-container">
-                    <div class="feedback-text">
-                        <h3>We would love to hear from you!</h3>
-                        <p>Whether you have compliments or complaints, questions or comments,
-                        <br>we would love to hear from you - please get in touch with us.</p>
-                    </div> <!-- end of feedback-text -->
-
-                    <div class="form-container">
-                        <form action="thank-you.html" name="form" class="form" id="form">
-                            
-                            <label for="name">Name: </label><br>
-                            <input type="text" id="name" name="name">
-                            <br>
-                            
-                            <div class="contact-method">
-                                <div class="email-container">
-                                    <label for="email">Email: </label><br>
-                                    <input type="email" id="email" name="email">
-                                </div>
-                                <div class="phone-container">
-                                    <label for="phone">Phone number: </label><br>
-                                    <input type="text" id="phone" name="phone">
-                                </div>
-                            </div> <!-- end of contact method -->
-
-                            <div class="selection">
-                                <div class="left">
-                                    <label for="topic">Tell us why you are reaching out to us: </label>
-                                </div>
-                                <div class="right">
-                                    <select name="topic" id="topic">   
-                                        <option>Select one</option>
-                                        <option value="employment">Employment</option>
-                                        <option value="feedback">Feedback</option>
-                                        <option value="event">Private Event</option>
-                                        <option value="reservation">Reservation</option>
-                                        <option value="general-comment">General Comment</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div> <!-- end of selection -->
-
-                            <p>How would you like to be contacted?</p>
-                            <input type="radio" name="preference" id="prefer-email" value="email">
-                            <label for="prefer-email">Email</label>
-                            <br>
-                            <input type="radio" name="preference" id="prefer-phone" value="phone">
-                            <label for="prefer-phone">Phone</label>
-                            <br>
-
-                            <label for="message">Message: </label>
-                            <br>
-                            <textarea name="message" id="message">Enter your message here</textarea>
-
-                            <input type="submit" value="submit">
-                        </form>
-                    </div> <!-- end of form-container -->
-                </div> <!-- end of feedback-container -->
-
             </div> <!-- end of contact-container -->
+
+            <div class="thank-you">
+                <h4>Thank you for submitting the form.</h4>
+                <h4>You will hear back from us within the next business day.</h4>
+            </div> <!-- end of thank-you -->
+
         </main>
-
-
+                
         <footer class="normal-footer">
             <div class="hours">
                 <p>Tuesday - Saturday</p>
@@ -145,6 +89,7 @@
         <div class="back-to-top">
             <a href="#"><i class="fa fa-arrow-up"></i></a>
         </div>
+
     </wrapper>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
