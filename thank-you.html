@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <wrapper>
+    <div class="wrapper">
         <button class="hamburger" tabindex="0">
             <span class="text sr-only">Menu</span>
             <span class="bar bar-top"></span>
@@ -41,8 +41,12 @@
                     <h3><a href="https://www.opentable.ca/" target="blank">Reserve a Table</a></h3>
                 </div> <!-- reserve-button -->
 
-                <div class="map">
-                    <h3>Insert map here</h3>
+                <div class="thank-you">
+                    <h4>Thank you very much for submitting the form.</h4>
+                    <h4>You will hear back from us within the next business day.</h4>
+                </div> <!-- end of thank-you -->
+
+                <div class="map" id="map">
                 </div>
 
                 <div class="contact-info-container">
@@ -62,11 +66,6 @@
                     </div> <!-- end of contact-us -->
                 </div> <!-- end of contact-info-container -->
             </div> <!-- end of contact-container -->
-
-            <div class="thank-you">
-                <h4>Thank you for submitting the form.</h4>
-                <h4>You will hear back from us within the next business day.</h4>
-            </div> <!-- end of thank-you -->
 
         </main>
                 
@@ -90,11 +89,13 @@
             <a href="#"><i class="fa fa-arrow-up"></i></a>
         </div>
 
-    </wrapper>
+    </div> <!-- end of wrapper -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqYWKFjfOW89Q1mYNgn7l2nXhCcHtCgiA&callback=initMap"
+            type="text/javascript"></script>            
     <script src="scripts/script.js"></script>
 
 </body>

@@ -26,10 +26,9 @@
     } // end of reserve-button a
 
     .map {
-        border: 1px solid $text-color-dark;
-        width: 100%;
+        @include margin-center;
+        width: 80%;
         height: 500px;
-        margin: $margin 0;
     } // end of map
 
     .contact-info-container {
@@ -90,8 +89,35 @@
         }
     } // end of feedback-text
 
+    .thank-you {
+        font-family: $heading-font;
+        font-size: $text-medium;
+        font-weight: 600;
+        text-align: center;
+        margin: $margin;
+        padding: $padding;
+        line-height: $line-height-text;
+    }
+
     @media only screen and (max-width: $tabletPortrait) {
         width: 100%;
     }
+
+    @media only screen and (max-width: $phonePortrait) {
+        .thank-you {
+            font-size: $text-small;
+            padding: $padding/3;
+        }
+
+        .reserve-button a {
+            font-size: $text-small;
+            padding: $padding/2;
+        }
+
+        .reserve-button {
+            margin-bottom: $padding;
+        }
+    }
+
 
 }
