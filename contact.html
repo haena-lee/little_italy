@@ -105,13 +105,36 @@
                                 </div>
                             </div> <!-- end of selection -->
 
-                            <p>How would you like to be contacted?</p>
-                            <input type="radio" name="preference" id="prefer-email" value="email">
-                            <label for="prefer-email">Email</label>
-                            <br>
-                            <input type="radio" name="preference" id="prefer-phone" value="phone">
-                            <label for="prefer-phone">Phone</label>
-                            <br>
+                            <div class="checkform">
+                                <p>If you would like to sign up for our newsletter,<br> please check all boxes that apply to indicate your interests:</p>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="interest[]" id="menu-changes" value="menu-changes">
+                                    <label for="menu-changes">Menu changes</label><br>
+                                    <input type="checkbox" name="interest[]" id="brewmaster-dinner" value="brewmaster-dinner">
+                                    <label for="brewmaster-dinner">Brewmaster's dinners</label><br>
+                                    <input type="checkbox" name="interest[]" id="wine-dinner" value="wine-dinner">
+                                    <label for="wine-dinner">Wine dinners</label><br>
+                                    <input type="checkbox" name="interest[]" id="charity" value="charity">
+                                    <label for="charity">Charity events</label><br>
+                                </div>
+                            </div> <!-- end of checkform -->
+                            
+                            <div class="radio-container">
+                                <p>How would you like to be contacted?</p>
+
+                            
+                                <div class="email-container">
+                                    <input type="radio" name="preference" id="prefer-email" value="email">
+                                    <label for="prefer-email">Email</label>
+                                </div>
+                                <div class="phone-container">
+                                    <input type="radio" name="preference" id="prefer-phone" value="phone">
+                                    <label for="prefer-phone">Phone</label>
+                                </div>
+                            
+                            </div><!-- end of radio container -->
+
+
 
                             <label for="message">Message: </label>
                             <br>
