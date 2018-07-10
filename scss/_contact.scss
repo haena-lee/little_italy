@@ -26,6 +26,28 @@
         }
     } // end of reserve-button a
 
+    .take-me-back {
+        text-align: center;
+        margin: $margin;
+    }
+
+    .take-me-back .fa {
+        padding-right: 10px;
+    }
+
+    .take-me-back a {
+        text-transform: uppercase;
+        @include plain-link;
+        color: $red-highlight;
+        font-size: $text-medium;
+        font-weight: 600;
+        padding-bottom: 12px;
+
+        #{$link-hover-selector} {
+            color: $text-color-light;
+        }
+    }
+
     .map {
         @include margin-center;
         width: 80%;
@@ -117,6 +139,10 @@
 
         .reserve-button {
             margin-bottom: $margin*2;
+        }
+        
+        .take-me-back a {
+            font-size: $text-small;
         }
     }
 
