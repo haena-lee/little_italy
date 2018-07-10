@@ -89,6 +89,13 @@ $signupButton.click(function(e){
 })
 
 
+// jump to thank you page upon submitting the form
+const $submit = $('#submit-form');
+$submit.click(function(){
+    window.location = 'thankyou.html';
+})
+
+
 // map
         var map;
         function initMap() {
