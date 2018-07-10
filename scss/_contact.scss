@@ -19,6 +19,7 @@
         color: $text-color-dark;
         padding: $padding;
         border: 2px solid $text-color-dark;
+        transition: all 0.3s ease-in-out;
         #{$link-hover-selector} {
             color: white;
             background-color: $text-color-dark;
@@ -115,7 +116,7 @@
         }
 
         .reserve-button {
-            margin-bottom: $padding;
+            margin-bottom: $margin*2;
         }
     }
 

@@ -6,3 +6,22 @@
 body {
     position: relative;
 }
+
+.back-to-top {
+    background: none;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 999;
+    display: none;
+
+    .fa-angle-up {
+        @include plain-link;
+        text-decoration: none;
+        color: $text-color-dark;
+    }
+
+    .fa-angle-up:hover {
+        color: $text-color-light;
+    }
+}

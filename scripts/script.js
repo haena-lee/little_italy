@@ -72,16 +72,16 @@ $('.back-to-top').click(function(event) {
     });
 });
 
-
 // newsletter signup
 const signupButton = document.getElementById('submit-button');
-const nlThankYou = document.getElementById('nl-thankyou')
 
 signupButton.addEventListener('click', function(e) {
     e.preventDefault();
-    document.getElementById('nl-thankyou').innerHTML = "Thank you. You are now signed up for our newsletter!";
+    document.getElementById('nl-thankyou').innerHTML = 'Thank you. You are now signed up for our newsletter!';
     document.getElementById('newsletter').style.display = 'none';
 })
+
+
 
 // map
 

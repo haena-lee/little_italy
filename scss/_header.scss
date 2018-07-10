@@ -81,6 +81,10 @@
     min-height: 25vh;
     background-image: url("../images/test-image.png");
     background-attachment: fixed;
+
+    @media only screen and (max-width: $phoneLandscape) {
+        min-height: 30vh;
+    }
 }
 
 

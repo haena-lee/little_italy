@@ -72,24 +72,4 @@
 }
 
 
-.back-to-top {
-    background: none;
-    position: fixed;
-    bottom: 5%;
-    right: 3%;
-    z-index: 999;
-    display: none;
 
-    .fa-arrow-up {
-        @include plain-link;
-        text-decoration: none;
-        color: $text-color-dark;
-        padding: 8px;
-        border: 1px solid $text-color-light;
-    }
-
-    .fa-arrow-up:hover {
-        background-color: $text-color-light;
-        color: $text-color-dark;
-    }
-}
